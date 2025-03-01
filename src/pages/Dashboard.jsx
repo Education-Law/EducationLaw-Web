@@ -1,13 +1,15 @@
 import React from 'react'
 import Button from '../component/Button'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronRight, faStar, faUser, faClock } from "@fortawesome/free-solid-svg-icons";
+import { faChevronRight, faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
+import Card from '../component/Card';
+import Testimoni from '../component/Testimoni';
 
 
 const Dashboard = () => {
     return (
         <div>
-            <div className='m-10 my-40'>
+            <div className='mx-60 my-40'>
                 <div className='flex justify-center items-center gap-50'>
                     <div>
                         <h1 className='mb-10 text-3xl text-red-500'>Belajar Hukum dengan Mudah & Fleksibel !</h1>
@@ -18,7 +20,7 @@ const Dashboard = () => {
                 </div>
             </div>
 
-            <div className='m-10 p-10 py-20 bg-[#888888] rounded-lg'>
+            <div className='m-10 px-60 py-20 bg-[#888888] rounded-lg'>
                 <h1 className='mb-20 text-3xl text-red-500 text-center'>Kenapa Harus Belajar di EducationLaw</h1>
                 <div className='flex justify-center items-cemter gap-50'>
                     <div className='flex flex-col gap-10'>
@@ -92,6 +94,76 @@ const Dashboard = () => {
                         <FontAwesomeIcon icon={faChevronRight} size="3x" />
                     </button>
                 </div>
+            </div>
+
+            <div className='mx-60 my-40'>
+                <div className='mb-20 flex gap-5'>
+                    <h1 className="max-w-max mb-4 text-3xl text-white bg-red-500 px-4 py-2 rounded-lg">
+                        Pelajari Berbagai Bidang Hukum
+                    </h1>
+                    <div className='w-10 h-13 border border-2 border-red-500 rounded-lg'></div>
+                    <div className='w-10 h-13 border border-2 border-red-500 rounded-lg'></div>
+                </div>
+                <div className="mb-10 grid grid-cols-3 gap-10">
+                    <Card />
+                    <Card />
+                    <Card />
+                </div>
+                <Button>Lihat lebih banyak!</Button>
+            </div>
+
+            <div className='m-10 px-60 py-20 bg-[#888888] rounded-lg'>
+                <div className='mb-20 flex items-center gap-20'>
+                    <hr className='flex-1 h-10 bg-red-500 border-none rounded-lg' />
+                    <h1 className='text-3xl text-red-500 whitespace-nowrap'>Apa Kata Mereka?</h1>
+                    <hr className='flex-1 h-10 bg-red-500 border-none rounded-lg' />
+                </div>
+                <div className='flex gap-20'>
+                    <div>
+                        <Testimoni />
+                        <div className='mt-10 flex gap-4'>
+                            <div className='w-50 h-13 border border-2 border-red-500 rounded-lg'></div>
+                            <div className='w-25 h-13 border border-2 border-red-500 rounded-lg'></div>
+                            <div className='w-10 h-13 border border-2 border-red-500 rounded-lg'></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div className='mb-10 flex gap-4'>
+                            <div className='w-50 h-13 border border-2 border-red-500 rounded-lg'></div>
+                            <div className='w-25 h-13 border border-2 border-red-500 rounded-lg'></div>
+                            <div className='w-10 h-13 border border-2 border-red-500 rounded-lg'></div>
+                        </div>
+                        <Testimoni />
+                    </div>
+                </div>
+            </div>
+
+            <div className='mx-60 my-40'>
+                <div className="flex gap-20 justify-center items-center">
+                    <div className="relative">
+                        <span className="absolute top-[-80px] left-1/2 transform -translate-x-6 text-red-500 text-6xl font-black rotate-12">?</span>
+                        <span className="absolute top-[-80px] left-1/2 transform -translate-x-[-10px] text-red-500 text-6xl font-black rotate-12">?</span>
+
+                        <div className="h-80 w-60 bg-red-500 rounded-lg"></div>
+                    </div>
+
+
+                    <div className="flex-1 list-none text-lg">
+                        <div className="mb-4 relative flex-1 text-lg bg-[#888888] text-white rounded-lg px-4 py-2">
+                            <span className="absolute top-[-5px] right-[-5px] text-red-500 text-4xl font-black rotate-12">?</span>
+                            Apakah saya mendapatkan sertifikat?
+                        </div>
+                        <div className="mb-4 relative flex-1 text-lg bg-[#888888] text-white rounded-lg px-4 py-2">
+                            <span className="absolute top-[-5px] right-[-5px] text-red-500 text-4xl font-black rotate-12">?</span>
+                            Bagaimana cara mengakses materi?
+                        </div>
+                        <div className="mb-4 relative flex-1 text-lg bg-[#888888] text-white rounded-lg px-4 py-2">
+                            <span className="absolute top-[-5px] right-[-5px] text-red-500 text-4xl font-black rotate-12">?</span>
+                            Berapa lama akses kursus ini tersedia?
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     )
