@@ -25,7 +25,7 @@ const Navbar = () => {
                     Daftar
                 </button>
                 <button
-                    className="px-5 py-2 bg-red-500 rounded-md font-bold text-white transition-all duration-300 hover:bg-red-600 hover:shadow-lg active:scale-95"
+                    className="px-5 py-2 bg-red-500 rounded-md font-bold text-white transition-all duration-300 hover:bg-red-600 active:scale-95"
                 >
                     Login
                 </button>
