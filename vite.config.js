@@ -4,6 +4,13 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  theme: {
+    extend: {
+      fontFamily: {
+        merriweather: ['Merriweather', 'serif'],
+      },
+    },
+  },
   plugins: [
     react(),
     tailwindcss(),

@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import Navbar from "../component/Navbar";
 
-export default function AppRoutes() {
+const AppRoutes = () => {
 
     return (
         <Routes>
@@ -9,3 +9,5 @@ export default function AppRoutes() {
         </Routes>
     )
 }
+
+export default AppRoutes
