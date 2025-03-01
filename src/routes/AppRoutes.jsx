@@ -3,6 +3,7 @@ import Navbar from "../component/Navbar";
 import Footer from "../component/footer";
 import Dashboard from "../pages/Dashboard";
 import Login from "../pages/Login";
+import Register from "../pages/register";
 
 const AppRoutes = () => {
 
@@ -18,6 +19,11 @@ const AppRoutes = () => {
             <Route path="/login" element={
                 <>
                     <Login />
+                </>
+            } />
+            <Route path="/register" element={
+                <>
+                    <Register />
                 </>
             } />
         </Routes>
