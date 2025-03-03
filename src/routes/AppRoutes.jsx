@@ -4,6 +4,7 @@ import Footer from "../component/footer";
 import Dashboard from "../pages/Dashboard";
 import Login from "../pages/Login";
 import Register from "../pages/register";
+import Course from "../pages/course";
 
 const AppRoutes = () => {
 
@@ -24,6 +25,11 @@ const AppRoutes = () => {
             <Route path="/register" element={
                 <>
                     <Register />
+                </>
+            } />
+            <Route path="/course" element={
+                <>
+                    <Course />
                 </>
             } />
         </Routes>
