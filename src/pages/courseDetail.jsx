@@ -55,7 +55,118 @@ const CourseDetail = () => {
             </div>
           </div>
         </section>
-        
+        <div className="border border-gray-500 rounded-lg p-10 mt-8 mx-20">
+          <section className="p-6 bg-white rounded-lg shadow-md">
+            <h2 className="text-xl font-bold text-rose-800">Keuntungan?</h2>
+            <div className="flex justify-around mt-4 border-b-2 border-red-600 pb-8">
+              <div className="text-center">
+                <div className="bg-gray-200 rounded-full w-16 h-16 mx-auto mb-2"></div>
+                <p>Sertifikat</p>
+              </div>
+              <div className="text-center">
+                <div className="bg-gray-200 rounded-full w-16 h-16 mx-auto mb-2"></div>
+                <p>Akses seumur hidup</p>
+              </div>
+              <div className="text-center">
+                <div className="bg-gray-200 rounded-full w-16 h-16 mx-auto mb-2"></div>
+                <p>Studi kasus hukum nyata</p>
+              </div>
+            </div>
+            
+            <div className="flex mt-4">
+              <div className="w-3/5 pt-5">
+              <h2 className="text-xl font-bold text-rose-800 pb-8">Deskripsi</h2>
+                <p className="text-gray-700">
+                  Dasar Hukum Dasar Hukum Dasar Hukum Dasar Hukum Dasar Hukum Dasar Hukum Dasar Hukum Dasar Hukum 
+                  Dasar Hukum Dasar Hukum Dasar Hukum Dasar Hukum Dasar Hukum Dasar Hukum Dasar Hukum Dasar Hukum 
+                  Dasar Hukum Dasar Hukum Dasar Hukum Dasar Hukum Dasar Hukum Dasar Hukum Dasar Hukum Dasar Hukum...
+                </p>
+                <div className="flex items-center mt-2">
+                  <div className="flex-grow border-t-2 border-rose-800"></div>
+                  <button className="flex text-rose-800 mx-2 item-center">
+                    Tampilkan <FaChevronDown className='my-1 pl-1' />
+                  </button>
+                  <div className="flex-grow border-t-2 border-rose-800"></div>
+                </div>
+              </div>
+              <div className="w-2/5 pt-5">
+                <h2 className="text-xl font-bold text-rose-800 pb-8 pl-12">Instructor</h2>
+                <div className="flex items-center ">
+                  <div className="w-1/3">
+                    <div className="bg-gray-200 rounded-full w-20 h-20 mx-auto mb-2"></div>
+                  </div>
+                  <div className="w-2/3">
+                    <p>Nama Instruktur</p>
+                    <a href="#" className="text-rose-800">
+                      Lihat Detail
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="mt-8 p-6 bg-gray-200 rounded-lg shadow-md">
+            <h2 className="text-xl font-bold text-rose-800">Daftar isi</h2>
+            <div className="mt-4">
+              {[1, 2, 3, 4].map((item, index) => (
+                <div key={index} className="mb-4">
+                  <div
+                    className="bg-white p-4 rounded-lg shadow-md flex justify-between items-center cursor-pointer"
+                    onClick={() => handleToggle(index)}
+                  >
+                    <div className="flex items-center">
+                      <div className="bg-rose-800 text-white rounded-full w-8 h-8 flex items-center justify-center">{item}</div>
+                      <span className="ml-4">Pendahuluan</span>
+                    </div>
+                    {activeIndex === index ? (
+                      <FaChevronDown className="text-gray-600 border-l-2 border-rose-800" />
+                    ) : (
+                      <FaChevronRight className="text-gray-600 border-l-2 border-rose-800" />
+                    )}
+                  </div>
+                  {activeIndex === index && (
+                    <div className="bg-white p-4 rounded-lg shadow-md mt-2">
+                      <p className="text-gray-700">
+                        Isi dari Pendahuluan {item}. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+                      </p>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="mt-8 p-6 bg-white ">
+            <h2 className="text-xl font-bold text-rose-800">Testimoni</h2>
+            <div className="flex justify-around mt-4">
+              <div className="text-center bg-white border-gray-300 border p-4 rounded-lg shadow-md mr-8">
+                <div className="bg-gray-200 rounded-full w-16 h-16 mx-auto mb-2"></div>
+                <p>Nama User</p>
+                <div className="flex justify-center items-center text-red-600">
+                  <FaStar />
+                  <span className="ml-2">4.8</span>
+                </div>
+                <p className="mt-2 text-gray-700">
+                  Testimoni Testimoni Testimoni Testimoni Testimoni Testimoni Testimoni Testimoni 
+                  Testimoni Testimoni Testimoni Testimoni Testimoni Testimoni Testimoni Testimoni 
+                  Testimoni Testimoni Testimoni Testimoni...
+                </p>
+              </div>
+              <div className="text-center bg-white p-4 border-gray-300 border rounded-lg shadow-md ml-8">
+                <div className="bg-gray-200 rounded-full w-16 h-16 mx-auto mb-2"></div>
+                <p>Nama User</p>
+                <div className="flex justify-center items-center text-red-600">
+                  <FaStar />
+                  <span className="ml-2">4.8</span>
+                </div>
+                <p className="mt-2 text-gray-700">
+                  Testimoni Testimoni Testimoni Testimoni Testimoni Testimoni Testimoni Testimoni 
+                  Testimoni Testimoni Testimoni Testimoni Testimoni Testimoni Testimoni Testimoni 
+                  Testimoni Testimoni Testimoni Testimoni...
+                </p>
+              </div>
+            </div>
+          </div>
+          </section>
+        </div>
       </main>
     </div>
   );
