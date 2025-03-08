@@ -6,7 +6,7 @@ import Card from '../component/Card';
 import Testimoni from '../component/Testimoni';
 
 
-const Dashboard = () => {
+const LandingPage = () => {
     return (
         <div>
             <div className='mx-60 my-40'>
@@ -169,4 +169,4 @@ const Dashboard = () => {
     )
 }
 
-export default Dashboard
+export default LandingPage
