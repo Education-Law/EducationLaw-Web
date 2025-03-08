@@ -6,6 +6,7 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import Course from "../pages/course";
 import Blog from "../pages/blog";
+import QuizMultiple from "../pages/QuizMultiple";
 
 const AppRoutes = () => {
 
@@ -39,6 +40,13 @@ const AppRoutes = () => {
                 <>
                     <Navbar />
                     <Blog />
+                    <Footer />
+                </>
+            } />
+            <Route path="/quiz" element={
+                <>
+                    <Navbar />
+                    <QuizMultiple />
                     <Footer />
                 </>
             } />
