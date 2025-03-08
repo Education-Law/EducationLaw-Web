@@ -5,7 +5,7 @@ import LandingPage from "../pages/LandingPage";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import Course from "../pages/course";
-import Module from "../pages/Module";
+import Blog from "../pages/blog";
 
 const AppRoutes = () => {
 
@@ -14,7 +14,7 @@ const AppRoutes = () => {
             <Route path="/" element={
                 <>
                     <Navbar />
-                    <Module />
+                    <LandingPage />
                     <Footer />
                 </>
             } />
@@ -30,7 +30,16 @@ const AppRoutes = () => {
             } />
             <Route path="/course" element={
                 <>
+                    <Navbar />
                     <Course />
+                    <Footer />
+                </>
+            } />
+            <Route path="/blog" element={
+                <>
+                    <Navbar />
+                    <Blog />
+                    <Footer />
                 </>
             } />
         </Routes>
