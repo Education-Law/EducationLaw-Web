@@ -62,9 +62,6 @@ const Module = () => {
             </div>
 
             <div className='flex justify-end gap-10'>
-                <button className='px-4 py-2 bg-red-500 text-white rounded-full hover:bg-red-600 transition duration-300 flex items-center justify-center'>
-                    <FontAwesomeIcon icon={faChevronRight} />
-                </button>
                 <Button>Download PDF</Button>
             </div>
         </div>

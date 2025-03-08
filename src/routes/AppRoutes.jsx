@@ -6,6 +6,9 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import Course from "../pages/course";
 import Blog from "../pages/blog";
+import QuizMultiple from "../pages/QuizMultiple";
+import QuizEssay from "../pages/QuizEssay";
+import Module from "../pages/Module";
 
 const AppRoutes = () => {
 
