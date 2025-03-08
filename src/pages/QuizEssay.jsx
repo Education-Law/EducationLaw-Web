@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronRight, faList } from "@fortawesome/free-solid-svg-icons";
+import { faList } from "@fortawesome/free-solid-svg-icons";
+import Button from '../component/Button';
 
 const QuizEssay = () => {
     const questions = [
@@ -24,7 +25,7 @@ const QuizEssay = () => {
                 <FontAwesomeIcon icon={faList} size="lg" />
             </button>
 
-            <div className='mb-6'>
+            <div className='mb-10'>
                 <h1 className="text-3xl font-bold text-red-600 mb-4">Essay Quiz</h1>
                 <hr className="h-1 bg-red-500 border-none mb-4" />
                 <p className='text-gray-400 text-xs'>
@@ -32,7 +33,7 @@ const QuizEssay = () => {
                 </p>
             </div>
 
-            <div>
+            <div className='mb-20'>
                 <form>
                     {questions.map((q, index) => (
                         <div key={index} className="mb-6 flex items-start gap-6">
@@ -55,10 +56,10 @@ const QuizEssay = () => {
                 </form>
             </div>
 
-            <div className='flex justify-end gap-10'>
-                <button className='px-4 py-2 bg-red-500 text-white rounded-full hover:bg-red-600 transition duration-300 flex items-center justify-center'>
-                    <FontAwesomeIcon icon={faChevronRight} />
-                </button>
+            <div className='flex justify-center items-center gap-10'>
+                <hr className='w-50 h-1 bg-red-500 border-none rounded-lg' />
+                <Button>Selesai</Button>
+                <hr className='w-50 h-1 bg-red-500 border-none rounded-lg' />
             </div>
         </div>
     );
