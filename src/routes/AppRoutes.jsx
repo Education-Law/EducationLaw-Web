@@ -8,6 +8,7 @@ import Course from "../pages/course";
 import Blog from "../pages/blog";
 import QuizMultiple from "../pages/QuizMultiple";
 import QuizEssay from "../pages/QuizEssay";
+import Module from "../pages/Module";
 
 const AppRoutes = () => {
 
@@ -41,20 +42,6 @@ const AppRoutes = () => {
                 <>
                     <Navbar />
                     <Blog />
-                    <Footer />
-                </>
-            } />
-            <Route path="/quiz" element={
-                <>
-                    <Navbar />
-                    <QuizMultiple />
-                    <Footer />
-                </>
-            } />
-            <Route path="/quiz2" element={
-                <>
-                    <Navbar />
-                    <QuizEssay />
                     <Footer />
                 </>
             } />
