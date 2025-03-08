@@ -1,10 +1,11 @@
 import { Route, Routes } from "react-router-dom";
 import Navbar from "../component/Navbar";
 import Footer from "../component/footer";
-import Dashboard from "../pages/Dashboard";
+import LandingPage from "../pages/LandingPage";
 import Login from "../pages/Login";
-import Register from "../pages/register";
+import Register from "../pages/Register";
 import Course from "../pages/course";
+import Module from "../pages/Module";
 
 const AppRoutes = () => {
 
@@ -13,7 +14,7 @@ const AppRoutes = () => {
             <Route path="/" element={
                 <>
                     <Navbar />
-                    <Dashboard />
+                    <Module />
                     <Footer />
                 </>
             } />
