@@ -7,6 +7,7 @@ import Register from "../pages/Register";
 import Course from "../pages/course";
 import Blog from "../pages/blog";
 import QuizMultiple from "../pages/QuizMultiple";
+import QuizEssay from "../pages/QuizEssay";
 
 const AppRoutes = () => {
 
@@ -47,6 +48,13 @@ const AppRoutes = () => {
                 <>
                     <Navbar />
                     <QuizMultiple />
+                    <Footer />
+                </>
+            } />
+            <Route path="/quiz2" element={
+                <>
+                    <Navbar />
+                    <QuizEssay />
                     <Footer />
                 </>
             } />
