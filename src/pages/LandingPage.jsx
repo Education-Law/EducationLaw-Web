@@ -1,9 +1,17 @@
 import React from 'react'
 import Button from '../component/Button'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronRight, faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import Card from '../component/Card';
 import Testimoni from '../component/Testimoni';
+import Footer from '../component/Footer'
+import hero from '../assets/hero.png'
+import sec1 from '../assets/sec1.png'
+import feat1 from '../assets/feat1.png'
+import feat2 from '../assets/feat2.png'
+import feat3 from '../assets/feat3.png'
+import faq from '../assets/faq.svg'
+import { Link } from 'react-router-dom';
 
 
 const LandingPage = () => {
@@ -16,7 +24,8 @@ const LandingPage = () => {
                         <p className='mb-10 text-sm'>Dapatkan akses ke berbagai materi hukum dari para ahli, kapan saja dan di mana saja.</p>
                         <Button>Mulai Belajar!</Button>
                     </div>
-                    <div className='h-80 w-60 bg-red-500 rounded-lg'></div>
+                    
+                    <img src={hero} alt="" />
                 </div>
             </div>
 
@@ -25,28 +34,37 @@ const LandingPage = () => {
                 <div className='flex justify-center items-cemter gap-50'>
                     <div className='flex flex-col gap-10'>
                         <div className='flex gap-10 items-center'>
-                            <div className='h-20 w-20 bg-gray-500 rounded-full'></div>
+                            <div className='h-20 w-20  rounded-full'>
+                                <img src={feat1} alt="" />
+                            </div>
                             <div>
                                 <h4 className='mb-2 font-bold text-lg'>Belajar dari Ahli</h4>
                                 <p className='text-sm'>Kursus dibuat oleh pengacara dan akademisi berpengalaman</p>
                             </div>
                         </div>
                         <div className='flex gap-10 items-center'>
-                            <div className='h-20 w-20 bg-gray-500 rounded-full'></div>
+                            <div className='h-20 w-20  rounded-full'>
+                            <img src={feat2} alt="" />
+                            </div>
                             <div>
                                 <h4 className='mb-2 font-bold text-lg'>Bersertifikat</h4>
                                 <p className='text-sm'>Dapatkan sertifikat setelah menyelesaikan kursus</p>
                             </div>
                         </div>
                         <div className='flex gap-10 items-center'>
-                            <div className='h-20 w-20 bg-gray-500 rounded-full'></div>
+                            <div className='h-20 w-20  rounded-full'>
+                            <img src={feat3} alt="" />
+                            </div>
                             <div>
                                 <h4 className='mb-2 font-bold text-lg'>Akses Materi Lengkap</h4>
                                 <p className='text-sm'>Video, dokumen, dan latihan soal.</p>
                             </div>
                         </div>
                     </div>
-                    <div className='h-80 w-60 bg-gray-500 rounded-lg'></div>
+                    <div className='w-80 h-80 mb-10'>
+                        <img src={sec1} alt="" className='h-auto max-w-full' />
+                    </div>
+                    
                 </div>
             </div>
 
@@ -109,7 +127,7 @@ const LandingPage = () => {
                     <Card />
                     <Card />
                 </div>
-                <Button>Lihat lebih banyak!</Button>
+                <Button><Link to='/course'>Lihat lebih banyak!</Link></Button>
             </div>
 
             <div className='m-10 px-60 py-20 bg-[#888888] rounded-lg'>
@@ -144,7 +162,9 @@ const LandingPage = () => {
                         <span className="absolute top-[-80px] left-1/2 transform -translate-x-6 text-red-500 text-6xl font-black rotate-12">?</span>
                         <span className="absolute top-[-80px] left-1/2 transform -translate-x-[-10px] text-red-500 text-6xl font-black rotate-12">?</span>
 
-                        <div className="h-80 w-60 bg-red-500 rounded-lg"></div>
+                        <div className="h-100 w-60  rounded-lg">
+                            <img src={faq} alt="" />
+                        </div>
                     </div>
 
 
@@ -163,8 +183,9 @@ const LandingPage = () => {
                         </div>
                     </div>
                 </div>
-
+                
             </div>
+            {/* <Footer /> */}
         </div>
     )
 }
