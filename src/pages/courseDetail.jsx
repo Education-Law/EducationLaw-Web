@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import { FaStar, FaChevronDown, FaChevronRight, FaUsers } from 'react-icons/fa';
+import realcase from '../assets/realcase.png'
+import feat2 from '../assets/feat2.png'
+import time from '../assets/lifetime.png'
+
 
 const CourseDetail = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -60,15 +64,21 @@ const CourseDetail = () => {
             <h2 className="text-xl font-bold text-rose-800">Keuntungan?</h2>
             <div className="flex justify-around mt-4 border-b-2 border-red-600 pb-8">
               <div className="text-center">
-                <div className="bg-gray-200 rounded-full w-16 h-16 mx-auto mb-2"></div>
+                <div className=" w-16 h-16 mx-auto mb-2">
+                  <img src={feat2} alt="" />
+                </div>
                 <p>Sertifikat</p>
               </div>
               <div className="text-center">
-                <div className="bg-gray-200 rounded-full w-16 h-16 mx-auto mb-2"></div>
+                <div className=" w-16 h-16 mx-auto mb-2">
+                  <img src={time} alt="" />
+                </div>
                 <p>Akses seumur hidup</p>
               </div>
               <div className="text-center">
-                <div className="bg-gray-200 rounded-full w-16 h-16 mx-auto mb-2"></div>
+                <div className=" w-16 h-16 mx-auto mb-2">
+                  <img src={realcase} alt="" />
+                </div>
                 <p>Studi kasus hukum nyata</p>
               </div>
             </div>
@@ -166,6 +176,7 @@ const CourseDetail = () => {
             </div>
           </div>
           </section>
+          
         </div>
       </main>
     </div>
