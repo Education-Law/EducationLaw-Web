@@ -9,6 +9,7 @@ import Blog from "../pages/blog";
 import QuizMultiple from "../pages/QuizMultiple";
 import QuizEssay from "../pages/QuizEssay";
 import Module from "../pages/Module";
+import CourseDetail from "../pages/courseDetail";
 
 const AppRoutes = () => {
 
@@ -38,10 +39,38 @@ const AppRoutes = () => {
                     <Footer />
                 </>
             } />
+            <Route path="/coursedetail" element={
+                <>
+                    <Navbar />
+                    <CourseDetail />
+                    <Footer />
+                </>
+            } />
+            <Route path="/module" element={
+                <>
+                    <Navbar />
+                    <Module />
+                    <Footer />
+                </>
+            } />
             <Route path="/blog" element={
                 <>
                     <Navbar />
                     <Blog />
+                    <Footer />
+                </>
+            } />
+            <Route path="/quiz" element={
+                <>
+                    <Navbar />
+                    <QuizMultiple />
+                    <Footer />
+                </>
+            } />
+            <Route path="/quiz2" element={
+                <>
+                    <Navbar />
+                    <QuizEssay />
                     <Footer />
                 </>
             } />

@@ -5,10 +5,9 @@ const Navbar = () => {
     const navItems = [
         { name: "Home", path: "/" },
         { name: "Course", path: "/course" },
-        { name: "Sertifikat", path: "/sertifikat" },
+        { name: "paket", path: "/paket" },
         { name: "Blog", path: "/blog" },
     ];
-
 
     return (
         <div className="p-5 flex justify-between items-center">
@@ -28,16 +27,20 @@ const Navbar = () => {
             </div>
 
             <div className="flex gap-4">
-                <button
-                    className="px-5 py-2 border-2 border-red-500 rounded-md font-bold text-red-500 transition-all duration-300 hover:bg-red-500 hover:text-white active:scale-95"
-                >
-                    Daftar
-                </button>
-                <button
-                    className="px-5 py-2 bg-red-500 rounded-md font-bold text-white transition-all duration-300 hover:bg-red-600 active:scale-95"
-                >
-                    Login
-                </button>
+                <Link to="/register">
+                    <button
+                        className="px-5 py-2 border-2 border-red-500 rounded-md font-bold text-red-500 transition-all duration-300 hover:bg-red-500 hover:text-white active:scale-95"
+                    >
+                        Daftar
+                    </button>
+                </Link>
+                <Link to="/login">
+                    <button
+                        className="px-5 py-2 bg-red-500 rounded-md font-bold text-white transition-all duration-300 hover:bg-red-600 active:scale-95"
+                    >
+                        Login
+                    </button>
+                </Link>
             </div>
         </div>
     );

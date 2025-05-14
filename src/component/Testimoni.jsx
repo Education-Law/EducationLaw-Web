@@ -10,15 +10,14 @@ const Testimoni = () => {
             <div className="mb-4 flex gap-4 items-center">
                 <div className="h-10 w-10 bg-gray-500 rounded-full"></div>
                 <div>
-                    <h1 className="font-bold text-lg">Nama</h1>
-                    <h4 className="text-gray-500 text-sm">Course</h4>
+                    <h1 className="font-bold text-lg">Martin Odegaard</h1>
+                    <h4 className="text-gray-500 text-sm">Course "Dasar Hukum"</h4>
                 </div>
             </div>
 
             <p className="mb-4 text-xs text-gray-700">
-                “Testimoni Testimoni Testimoni Testimoni Testimoni Testimoni Testimoni Testimoni Testimoni Testimoni Testimoni Testimoni Testimoni Testimoni
-                Testimoni Testimoni Testimoni Testimoni Testimoni Testimoni Testimoni Testimoni Testimoni Testimoni Testimoni Testimoni Testimoni Testimoni
-                Testimoni Testimoni.”
+                Belajar hukum dari nol terasa lebih mudah dengan course ini. Pembahasannya ringan tapi tetap berbobot, sangat direkomendasikan bagi siapa saja
+                yang ingin memahami hukum lebih dalam!
             </p>
 
             <div className="flex items-center gap-2">
